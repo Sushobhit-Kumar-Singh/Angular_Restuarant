@@ -1,0 +1,33 @@
+
+<header>
+  <div class="container">
+    <a routerLink="/">
+    <img src="../assets/logo.svg" alt="logo" height="80" width="300" />
+  </a>
+    <nav>
+      <ul>
+        <li>
+          <a routerLink="/">Home</a>
+        </li>
+        <li>
+          <a routerLink="/login">Login</a>
+        </li>
+        <li class="menu-container">
+          <a routerLink="/dashboard">Profile</a>
+          <div class="menu">
+            <a routerLink="/profile">Customer</a>
+            <a routerLink="/orders">Waiter</a>
+            <a routerLink="/orders">Chef</a>
+            <a routerLink="/orders">Manager</a>
+            <a>Logout</a>
+          </div>
+        </li>
+        <li>
+          <a routerLink="/cart-page">
+            Cart <span>{{cartQuantity}}</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
